@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>FitnessTime</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/style.css" media="screen" />
     <!--
     <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
@@ -12,229 +12,299 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/normalize.css" />
 -->
-        
+
 </head>
 
 <body>
     <header class="page-header">
-       <a name="home"></a>
-        <div class="top-header">
-            <a class="top-header__logo">FitnessTime</a>
+        <a name="home"></a>
 
-            <ul class="main-nav">
-                <li><a class="active" href="#">home</a></li>
-                <li><a href="#features">features</a></li>
-                <li><a href="#team">our team</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#pricing">pricing</a></li>
-                <li><a href="#partners">partners</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-            <div class="phone-number">
-                <span>1-800-555-1234</span>
+        <div class="page-header__wrap">
+
+            <div class="top-header">
+                <a class="top-header__logo">FitnessTime</a>
+
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__active-item"><a href="#">home</a></li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#team">our team</a></li>
+                        <li><a href="#gallery">gallery</a></li>
+                        <li><a href="#pricing">pricing</a></li>
+                        <li><a href="#partners">partners</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="phone-number">
+                    <a href="tel:1-800-555-1234">1-800-555-1234</a>
+                </div>
+
             </div>
-        </div>
-        <div class="promo">
-            <span>Landing page template</span>
-            <h2>Perfect fitness solution</h2>
-            <h3>Best choice for your site</h3>
+
+            <div class="promo">
+                <span class="promo__tag">Landing page template</span>
+                <h2 class="promo__header">Perfect fitness solution</h2>
+                <h3 class="promo__subheader">Best choice for your site</h3>
+            </div>
         </div>
     </header>
 
+
+
     <div class="features">
         <a name="features"></a>
-        <h2>Welcome to fitness<span>time</span></h2>
-        <p class="features__text">Take care of your body. It's the only place you have to live.</p>
-        <ul>
-            <li class="features__item">
-                <h3>Strength training</h3>
-                <p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
-            </li>
-            <li class="features__item">
-                <h3>Cardio fitness</h3>
-                <p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
-            </li>
-            <li class="features__item">
-                <h3>Aquatic</h3>
-                <p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
-            </li>
-            <li class="features__item">
-                <h3>Mind &amp; body</h3>
-                <p>Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
-            </li>
-        </ul>
+
+        <div class="features__wrap">
+
+            <h2 class="features__header">Welcome to fitness<span>time</span></h2>
+
+            <p class="features__text">Take care of your body. It's the only place you have to live.</p>
+
+            <ul class="features__list">
+                <li class="features__item">
+                    <h3 class="features__item-header">Strength training</h3>
+                    <p class="features__item-text">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__item-header">Cardio fitness</h3>
+                    <p class="features__item-text">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__item-header">Aquatic</h3>
+                    <p class="features__item-text">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+                </li>
+                <li class="features__item">
+                    <h3 class="features__item-header">Mind &amp; body</h3>
+                    <p class="features__item-text">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <div class="team">
         <a name="team"></a>
-        <h2>Superb trainers</h2>
-        <ul>
-            <li class="team__item">
-                <img src="#" width="270" height="240" alt="Otto W. Schreffler" />
-                <h3>Otto W. Schreffler</h3>
-                <span>Trainer</span>
-            </li>
-            <li class="team__item">
-                <img src="#" width="270" height="240" alt="Brooke C. Carrington" />
-                <h3>Brooke C. Carrington</h3>
-                <span>Trainer</span>
-            </li>
-            <li class="team__item">
-                <img src="#" width="270" height="240" alt="Arthur M. Huffman" />
-                <h3>Arthur M. Huffman</h3>
-                <span>Trainer</span>
-            </li>
-            <li class="team__item">
-                <img src="#" width="270" height="240" alt="Bernice B. Work" />
-                <h3>Bernice B. Work</h3>
-                <span>Trainer</span>
-            </li>
-        </ul>
+
+        <div class="team__wrap">
+
+            <h2 class="team__header">Superb trainers</h2>
+
+            <ul class="team__list">
+                <li class="team__item">
+                    <img src="#" width="270" height="240" alt="Otto W. Schreffler" />
+                    <h3 class="team__item-header">Otto W. Schreffler</h3>
+                    <span class="team__item-subheader">Trainer</span>
+                </li>
+                <li class="team__item">
+                    <img src="#" width="270" height="240" alt="Brooke C. Carrington" />
+                    <h3 class="team__item-header">Brooke C. Carrington</h3>
+                    <span class="team__item-subheader">Trainer</span>
+                </li>
+                <li class="team__item">
+                    <img src="#" width="270" height="240" alt="Arthur M. Huffman" />
+                    <h3 class="team__item-header">Arthur M. Huffman</h3>
+                    <span class="team__item-subheader">Trainer</span>
+                </li>
+                <li class="team__item">
+                    <img src="#" width="270" height="240" alt="Bernice B. Work" />
+                    <h3 class="team__item-header">Bernice B. Work</h3>
+                    <span class="team__item-subheader">Trainer</span>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <div class="gallery">
         <a name="gallery"></a>
-        <h2>Our gallery</h2>
-        <p class="gallery__text">Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet orci porttitor, at malesuada mauris sodales. Mauris vitae ipsum sed risus.</p>
-        <ul>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li>
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-            <li class="gallery_item">
-                <img src="#" width="270" height="180" alt="FitnessTime" />
-            </li>
-        </ul>
+
+        <div class="gallery__wrap">
+
+            <h2 class="gallery__header">Our gallery</h2>
+
+            <p class="gallery__text">Praesent posuere eros in quam dictum, quis dignissim odio suscipit. Integer luctus mi sit amet orci porttitor, at malesuada mauris sodales. Mauris vitae ipsum sed risus.</p>
+
+            <ul class="gallery__list">
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+                <li class="gallery__item">
+                    <img src="#" width="270" height="180" alt="FitnessTime" />
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <div class="pricing">
         <a name="pricing"></a>
-        <h2>Pricing and plans</h2>
-        <ul class="pricing__list">
-            <li class="pricing__item">
-                <div class="pricing__name">
-                    <h3>Standart</h3>
-                    <b>$33<span>.33</span>
+
+        <div class="pricing__wrap">
+
+            <h2 class="pricing__header">Pricing and plans</h2>
+
+            <ul class="pricing__list">
+                <li class="pricing__item">
+                    <div class="pricing__item-descr">
+                        <h3 class="pricing__item-name">Standart</h3>
+                        <b class="pricing__item-price">$33<span>.33</span>
                     </b>
-                </div>
-                <ul class="pricing__options">
-                    <li>Powerful Admin Panel</li>
-                    <li>Event Calendar Pro Supported</li>
-                    <li>Boxed And Wide Versions</li>
-                    <li>Dark &amp; Light Version</li>
-                    <li>Revolution Slider $15 Worth</li>
-                </ul>
-            </li>
-            <li class="pricng__item">
-                <div class="pricing__name">
-                    <h3>Advanced</h3>
-                    <b>$52<span>.60</span>
+                    </div>
+                    <ul class="pricing__options">
+                        <li>Powerful Admin Panel</li>
+                        <li>Event Calendar Pro Supported</li>
+                        <li>Boxed And Wide Versions</li>
+                        <li>Dark &amp; Light Version</li>
+                        <li>Revolution Slider $15 Worth</li>
+                    </ul>
+                </li>
+                <li class="pricing__item">
+                    <div class="pricing__item-descr">
+                        <h3 class="pricing__item-name">Advanced</h3>
+                        <b class="pricing__item-price">$52<span>.60</span>
                     </b>
-                </div>
-                <ul class="pricing__options">
-                    <li>Powerful Admin Panel</li>
-                    <li>Event Calendar Pro Supported</li>
-                    <li>Boxed And Wide Versions</li>
-                    <li>Dark &amp; Light Version</li>
-                    <li>Revolution Slider $15 Worth</li>
-                </ul>
-            </li>
-            <li class="pricng__item">
-                <div class="pricing__name">
-                    <h3>Business</h3>
-                    <b>$84<span>.20</span>
+                    </div>
+                    <ul class="pricing__options">
+                        <li>Powerful Admin Panel</li>
+                        <li>Event Calendar Pro Supported</li>
+                        <li>Boxed And Wide Versions</li>
+                        <li>Dark &amp; Light Version</li>
+                        <li>Revolution Slider $15 Worth</li>
+                    </ul>
+                </li>
+                <li class="pricing__item">
+                    <div class="pricing__item-descr">
+                        <h3 class="pricing__item-name">Business</h3>
+                        <b class="pricing__item-price">$84<span>.20</span>
                     </b>
-                </div>
-                <ul class="pricing__options">
-                    <li>Powerful Admin Panel</li>
-                    <li>Event Calendar Pro Supported</li>
-                    <li>Boxed And Wide Versions</li>
-                    <li>Dark &amp; Light Version</li>
-                    <li>Revolution Slider $15 Worth</li>
-                </ul>
-            </li>
-        </ul>
+                    </div>
+                    <ul class="pricing__options">
+                        <li>Powerful Admin Panel</li>
+                        <li>Event Calendar Pro Supported</li>
+                        <li>Boxed And Wide Versions</li>
+                        <li>Dark &amp; Light Version</li>
+                        <li>Revolution Slider $15 Worth</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <div class="partners">
         <a name="partners"></a>
-        <h2>Partners</h2>
-        <ul>
-            <li class="partners__item">
-                <img src="#" width="131" height="40" alt="Spotify" />
-            </li>
-            <li class="partners__item">
-                <img src="#" width="150" height="31" alt="Microsoft" />
-            </li>
-            <li class="partners__item">
-                <img src="#" width="136" height="44" alt="Instagram" />
-            </li >
-            <li class="partners__item">
-                <img src="#" width="169" height="25" alt="Shutterstock" />
-            </li>
-            <li class="partners__item">
-                <img src="#" width="148" height="36" alt="Square" />
-            </li>
-        </ul>
+
+        <div class="partners__wrap">
+
+            <h2 class="partners__header">Partners</h2>
+
+            <ul class="partners__list">
+                <li class="partners__item">
+                    <img src="#" width="131" height="40" alt="Spotify" />
+                </li>
+                <li class="partners__item">
+                    <img src="#" width="150" height="31" alt="Microsoft" />
+                </li>
+                <li class="partners__item">
+                    <img src="#" width="136" height="44" alt="Instagram" />
+                </li>
+                <li class="partners__item">
+                    <img src="#" width="169" height="25" alt="Shutterstock" />
+                </li>
+                <li class="partners__item">
+                    <img src="#" width="148" height="36" alt="Square" />
+                </li>
+            </ul>
+        </div>
     </div>
+
+
 
     <footer class="page-footer">
         <a name="contact"></a>
-        <div class="top-footer">
-            <div class="top-footer__twitter">
-                <p>RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10) </p>
-                <span>2 days ago</span>
+
+        <div class="page-footer__wrap">
+
+            <div class="page-footer__top">
+                <div class="twitter">
+                    <p class="twitter__text">RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups today may be big friends later. (9/10) </p>
+                    <span>2 days ago</span>
+                </div>
+
+                <ul class="social">
+                    <li>
+                        <a class="social__button-facebook" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="social__button-twitter" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="social__button-pinterest" href="#">Pinterest</a>
+                    </li>
+                    <li>
+                        <a class="social__button-google+" href="#">Google+</a>
+                    </li>
+                    <li>
+                        <a class="social__button-tumblr" href="#">Tumblr</a>
+                    </li>
+                    <li>
+                        <a class="social__button-instagram" href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a class="social__button-rss" href="#">RSS</a>
+                    </li>
+                </div>
             </div>
-            <div class="social">
-                <a class="social__button social__button--facebook" href="#">Facebook</a>
-                <a class="social__button social__button--twitter" href="#">Twitter</a>
-                <a class="social__button social__button--pinterest" href="#">Pinterest</a>
-                <a class="social__button social__button--google+" href="#">Google+</a>
-                <a class="social__button social__button--tumblr" href="#">Tumblr</a>
-                <a class="social__button social__button--instagram" href="#">Instagram</a>
-                <a class="social__button social__button--rss" href="#">RSS</a>
+
+            <div class="page-footer__middle">
+                <div class="contact">
+                    <h3 class="contact__header">Contact info</h3>
+                    <p class="contact__text">Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.</p>
+                    <a href="tel:1-800-555-1234">1-800-555-1234</a> 
+                    <br>
+                    <span class="contact__email">support@website.com</span>
+                </div>
+
+                <div class="write-us">
+                    <h3 class="write-us__header">Send us a massage</h3>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Your name" />
+                        <input type="email" placeholder="Email address" />
+                        <input type="text" placeholder="Subject" />
+                        <textarea placeholder="Your message"></textarea>
+                        <input type="submit" value="Submit ypur message" />
+                        <span>Make sure you put a valid email.</span>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="middle-footer">
-            <div class="middle-footer__contact">
-                <h3>Contact info</h3>
-                <p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui.</p>
-                <span>+1800 1234 56789</span>
-                <br>
-                <span>support@website.com</span>
+
+            <div class="page-footer__bottom">
+                <div class="copyright">© 2013. All rights reserved. Designed by PSD Booster.</div>
+                <a href="#home">Back to top</a>
             </div>
-            <div class="middle-footer__write-us">
-                <h3>Send us a massage</h3>
-                <form action="#" method="post">
-                    <input type="text" placeholder="Your name" />
-                    <input type="email" placeholder="Email address" />
-                    <input type="text" placeholder="Subject" />
-                    <textarea placeholder="Your message"></textarea>
-                    <input type="submit" value="Submit ypur message" />
-                    <span>Make sure you put a valid email.</span>
-                </form>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="bottom-footer__copyright">© 2013. All rights reserved. Designed by PSD Booster.</div>
-            <a href="#home">Back to top</a>
         </div>
     </footer>
 </body>

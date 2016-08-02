@@ -1,0 +1,120 @@
+.pricing {
+    min-width: 1200px;
+    padding: 60px 0;
+    background: @red;
+    
+    &__wrap {
+        .wrapper;
+    }
+    
+     &__title {
+        position: relative;
+        text-align: center;
+        margin: 0;
+         margin-bottom: 70px;
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base + 1;
+        line-height: @line-height-base - .3;
+        font-weight: bold;
+        color: @white;
+        text-transform: uppercase;
+         
+         &:after {
+             position: absolute;
+             bottom: -10px;
+             left: 48%;
+             width: 45px;
+             border-bottom: 1px solid @white;
+             content: "";
+         }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__item {
+        display: flex;
+        width: 370px;
+//        justify-content: space-between;
+        border: 2px solid @red-dark;
+        background-color: @red-dark;
+        
+        &:hover {
+            border-color: @white;
+            cursor: pointer;
+            
+            .pricing__item-descr:after {
+                border-color: @white;
+            } 
+        }
+        
+    
+    }
+    
+    &__item-descr {
+        position: relative;
+        padding: 75px 0 27px 30px;
+        width: 107px;
+        
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 27px;
+            content: "";
+            height: 120px;
+            border-right: 1px solid @red;
+        }
+    }
+    
+    &__item-name {
+        margin: 0;
+         margin-bottom: 19px;
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base + .4;
+        line-height: @line-height-base - .3;
+        font-weight: bold;
+        color: @white;
+        text-transform: uppercase;
+    }
+    
+    &__item-price {
+        position: relative;
+        margin: 0;
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base + 2.2;
+        line-height: @line-height-base - .3;
+        font-weight: bold;
+        color: @white;
+        
+        span{
+            position: absolute;
+            top: 5px;
+            font-size: @font-size-base;
+        }
+        
+    }
+    
+    &__item-options {
+        width: 233px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 35px;
+        
+        li {
+            padding: 0;
+            margin: 0;
+            padding-left: 33px;
+            color: @white;
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: @font-size-base - .2;
+            line-height: @line-height-base - .3;
+        }
+        
+    }
+}

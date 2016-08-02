@@ -1,0 +1,248 @@
+.page-footer {
+    min-width: 1200px;
+    padding: 35px 0;
+    
+    &__wrap {
+        .wrapper;
+    }
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid @grey-70;
+        padding-bottom: 25px;
+    }
+}
+
+.twitter {
+    display: block;
+    width: 530px;
+    color: @white;
+    margin: 0;
+    padding-left: 40px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: @font-size-base - .1;
+    line-height: @line-height-base - .2;
+    font-weight: 100;
+    
+    span {
+        display: inline-block;
+        margin-left: 5px;
+        color: @grey-71;
+    }
+}
+
+.social {
+    .list-to-flex;
+    
+    a {
+        .hidden-text;
+    }
+}
+
+.page-footer__middle {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 100px 0;
+    }
+
+.contact {
+    width: 370px;
+    
+    &__title {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        font-weight: bold;
+        color: @white;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 23px;
+    }
+    
+    &__text {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: @font-size-base - .2;
+        line-height: @line-height-base - .3;
+        font-weight: 100;
+        color: @grey-c6;
+        margin-bottom: 22px;
+    }
+    
+    a {
+        padding-left: 19px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: @font-size-base - .2;
+        line-height: @line-height-base - .3;
+        font-weight: 100;
+        color: @grey-c6;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    &__email {
+        padding-left: 22px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: @font-size-base - .2;
+        line-height: @line-height-base - .3;
+        font-weight: 100;
+        color: @grey-c6;
+        margin: 0;
+    }
+}
+
+.write-us {
+    width: 670px;
+    
+    &__title {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        font-weight: bold;
+        color: @white;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 27px;
+    }
+    
+    form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        input {
+            width: 190px;
+            border: 1px solid @grey-4f;
+            margin-bottom: 16px;
+            padding: 10px;
+            
+            &::-webkit-input-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            vertical-align: middle;
+            }
+        
+        ::-moz-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            vertical-align: middle;
+            }
+        
+        :-moz-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            }
+        
+        :-ms-input-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            }
+        }
+        
+        textarea {
+            width: 419px;
+            height: 91px;
+            padding: 10px;
+            border: 1px solid @grey-4f;
+            
+            &::-webkit-input-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            vertical-align: middle;
+            }
+            
+            ::-moz-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            vertical-align: middle;
+            }
+        
+        :-moz-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            }
+        
+        :-ms-input-placeholder {
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - .3;
+            color: @grey-4f;
+            text-transform: uppercase;
+            }
+        }
+        
+        .write-us__btn {
+            width: 212px;
+            height: 36px;
+            background-color: @red;
+            border: none;
+            font-family: Oswald, Arial, sans-serif;
+            font-size: @font-size-base;
+            line-height: @line-height-base - 1;
+            color: @white;
+            text-transform: uppercase;
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+        span {
+            position: absolute;
+            right: 6%;
+            bottom: 28%;
+            font-family: "Open Sans", Arial, sans-serif;
+            font-size: @font-size-base - .2;
+            line-height: @line-height-base - .3;
+            font-weight: 100;
+            color: @grey-70;
+        }
+    }
+    
+}
+
+.page-footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 35px;
+    
+    a {
+        color: @red;
+        text-decoration: underline;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: @font-size-base - .2;
+        line-height: @line-height-base - .3;
+        font-weight: 100;
+    }
+    }
+
+.copyright {
+    font-family: "Open Sans", Arial, sans-serif;
+        font-size: @font-size-base - .2;
+        line-height: @line-height-base - .3;
+        font-weight: 100;
+        color: @grey-70;
+}
+
+
+

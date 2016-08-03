@@ -1,7 +1,12 @@
 .team {
     min-width: 1200px;
     padding: 60px 0;
-    background: black;
+    background: url("../img/bg-team.jpg") center no-repeat;
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url("../img/bg-team@2x.jpg");
+        background-size: cover;
+      }
     
     &__wrap {
         .wrapper;

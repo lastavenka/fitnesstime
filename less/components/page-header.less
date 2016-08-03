@@ -1,15 +1,8 @@
 .page-header {
-    position: relative;
     min-width: 1200px;
-    padding: 317px 0 217px 0;
-    
-    &__wrap {
-        .wrapper;
-    }
 }
 
 .top-header {
-    position: absolute;
     padding: 33px 0;
     top: 0;
     width: 100%;
@@ -33,34 +26,35 @@
 }
 
 .phone-number {
+    display: flex;
     position: absolute;
     top: 67px;
     right: 60px;
-    background-color: @red;
-    padding: 6px 27px 7px 27px;
+    background-color: @red-darken;
+    width: 177px;
+    height: 37px;
+    
+    &__icon {
+        margin: 11px 13px;
+        .sprite; 
+        .sprite-icon-phone-number;
+    }
     
     a {
+        text-align: center;
+        display: block;
         font-family: Oswald, Arial, sans-serif;
         font-size: @font-size-base;
         color: @white;
         line-height: @line-height-base - .3;
+        background-color: @red;
+        padding: 8px 28px 8px 27px;
+        margin: 0;
     }
-    
-    &:before {
-            position: absolute;
-        top: 0;
-        left: -37px;
-            content: "";
-            width: 37px;
-            height: 37px;
-            background-color: @red-darken;
-        }
 }
 
 .main-nav__list {
     display: flex;
-//    justify-content: space-between;
-//    width: 610px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -81,6 +75,17 @@
 }
 
 .promo {
+    background: url("../img/bg-header.jpg") center no-repeat;
+    padding: 216px 0;
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url("../img/bg-header@2x.jpg");
+        background-size: cover;
+      }
+    
+    &__wrap {
+        .wrapper;
+    }
     
     &__tag {
         font-family: Oswald, Arial, sans-serif;

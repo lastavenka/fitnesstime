@@ -46,8 +46,9 @@
     }
     
     &__item-title {
+        position: relative;
         margin: 0;
-        margin-left: 37px;
+        margin-left: 36px;
         margin-bottom: 16px;
         font-family: Oswald, Arial, sans-serif;
         font-size: @font-size-base;
@@ -55,7 +56,52 @@
         font-weight: bold;
         color: @grey-20;
         text-transform: uppercase;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            left: -35px;
+            .sprite;
+            .sprite-icon-features--tablet;
+        }
+        
+        &--cardio {
+            margin-left: 41px;
+            
+            &:before {
+            content: "";
+            position: absolute;
+            left: -41px;
+            .sprite;
+            .sprite-icon-features--cardio;
+        } 
+        }
+        
+        &--aqua {
+            margin-left: 32px;
+            
+            &:before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            .sprite;
+            .sprite-icon-features--aqua;
+        } 
+        }
+        
+        &--mind {
+            margin-left: 32px;
+            
+            &:before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            .sprite;
+            .sprite-icon-features--group;
+        } 
+        }
     }
+    
     &__item-text {
         margin: 0;
         font-family: "Open Sans", Arial, sans-serif;

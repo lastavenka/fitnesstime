@@ -1,6 +1,12 @@
 .page-footer {
     min-width: 1200px;
     padding: 35px 0;
+    background: url("../img/bg-footer.jpg") center no-repeat;
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url("../img/bg-footer@2x.jpg");
+        background-size: cover;
+      }
     
     &__wrap {
         .wrapper;
@@ -15,8 +21,8 @@
 }
 
 .twitter {
+    width: 575px;
     display: block;
-    width: 530px;
     color: @white;
     margin: 0;
     padding-left: 40px;
@@ -70,6 +76,7 @@
     }
     
     a {
+        position: relative;
         padding-left: 19px;
         font-family: "Open Sans", Arial, sans-serif;
         font-size: @font-size-base - .2;
@@ -78,9 +85,19 @@
         color: @grey-c6;
         font-weight: normal;
         margin: 0;
+        
+        &:before {
+            top: 3px;
+            left: 2px;
+            content: "";
+            position: absolute;
+            .sprite;
+            .sprite-icon-contact--phone;
+        }
     }
     
     &__email {
+        position: relative;
         padding-left: 22px;
         font-family: "Open Sans", Arial, sans-serif;
         font-size: @font-size-base - .2;
@@ -88,6 +105,14 @@
         font-weight: 100;
         color: @grey-c6;
         margin: 0;
+        
+        &:before {
+            top: 5px;
+            content: "";
+            position: absolute;
+            .sprite;
+            .sprite-icon-contact--email;
+        }
     }
 }
 
@@ -224,7 +249,6 @@
 .page-footer__bottom {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 35px;
     
     a {
         color: @red;

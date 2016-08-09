@@ -29,15 +29,17 @@
     display: flex;
     position: absolute;
     top: 67px;
-    right: 60px;
+    right: 63px;
     background-color: @red-darken;
     width: 177px;
     height: 37px;
     
     &__icon {
-        margin: 11px 13px;
-        .sprite; 
-        .sprite-icon-phone-number;
+        margin: 11px 13px 11px 13px;
+        width: 14px;
+        height: 15px;
+        background-image: url("../img/icons/icons-svg/icon-phone-handset.svg");
+        background-size: 15px 15px;
     }
     
     a {
@@ -53,7 +55,13 @@
     }
 }
 
-.main-nav__list {
+.main-nav {
+    
+    &__active-item {
+        background: @red;
+    }
+    
+    &__list {
     display: flex;
     list-style: none;
     margin: 0;
@@ -72,6 +80,7 @@
         cursor: pointer;
     }
     }
+}
 }
 
 .promo {

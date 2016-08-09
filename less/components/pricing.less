@@ -72,31 +72,24 @@
         &:before {
             content: "";
             position: absolute;
+            width: 31px;
+            height: 31px;
             top: -50px;
             left: 20px;
-            .sprite;
-            .sprite-icon-pricing--pencil;
+            background-image: url("../img/icons/icons-svg/icon-pricing--pencil.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
         }
         
         &--advanced {
             &:before {
-                content: "";
-                position: absolute;
-                top: -50px;
-                left: 20px;
-                .sprite;
-                .sprite-icon-pricing--plane;
+                background-image: url("../img/icons/icons-svg/icon-pricing--plane.svg");
             }
         }
         
         &--business {
             &:before {
-                content: "";
-                position: absolute;
-                top: -50px;
-                left: 20px;
-                .sprite;
-                .sprite-icon-pricing--portfolio;
+                background-image: url("../img/icons/icons-svg/icon-pricing--portfolio.svg");
             }
         }
     }

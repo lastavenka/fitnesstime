@@ -25,30 +25,23 @@
     
     a {
         display: flex;
-        width: 575px;
+        align-items: center;
     }
     
     &__text {
+        width: 580px;
         position: relative;
-    display: block;
     color: @white;
     margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: @font-size-base - .1;
     line-height: @line-height-base - .2;
     font-weight: 100;
-        margin-left: 40px;
+    }
         
-        &:before {
-            position: absolute;
-            content: '';
-            width: 24px;
-            height: 24px;
-            background-image: url("../img/icons/icons-svg/icon-social--twitter.svg");
-            background-repeat: no-repeat;
-            left: -35px;
-            background-size: contain;
-            top: 8px;
+        svg {
+            fill: @white;
+            margin-right: 15px;
 }
     
     span {
@@ -57,62 +50,36 @@
         color: @grey-71;
     }
 }
-    &__icon {
-    width: 24px;
-    height: 24px;
-    margin: 12px 15px 0 0;
-    background-repeat: no-repeat;
-}
-}
 
 
 
 .social {
     .list-to-flex;
-    font-size: 0;
+    align-items: center;
     
-    a {
-        display: inline-block;
-        .hidden-text;
-        width: 26px;
-        height: 26px;
-        background-position: center;
+    li {
+        width: 15px;
+        height: 15px;
+        padding: 6px;
         border: 1px solid @grey-20;
-        
         
         &:hover {
             border: 1px solid @white;
         }
-        
     }
     
-    &__button-facebook {
-        background: url("../img/icons/icons-svg/icon-social--fb.svg") no-repeat;
+    a {
+        display:block;
+        line-height: 15px;
+        width: 15px;
+        height: 100%;
     }
     
-    &__button-twitter {
-        background: url("../img/icons/icons-svg/icon-social--twitter.svg") no-repeat;
+    svg {
+        fill: @white;
     }
     
-    &__button-pinterest {
-        background: url("../img/icons/icons-svg/icon-social--pin.svg") no-repeat;
-    }
-    
-    &__button-google {
-        background: url("../img/icons/icons-svg/icon-social--g+.svg") no-repeat;
-    }
-    
-    &__button-tumblr {
-        background: url("../img/icons/icons-svg/icon-social--tumblr.svg") no-repeat;
-    }
-    
-    &__button-instagram {
-        background: url("../img/icons/icons-svg/icon-social--instagram.svg") no-repeat;
-    }
-    
-    &__button-rss {
-        background: url("../img/icons/icons-svg/icon-social--rss.svg") no-repeat;
-    }
+   
 }
 
 .page-footer__middle {
@@ -145,8 +112,15 @@
     }
     
     &__phone {
-        position: relative;
-        padding-left: 19px;
+        display: flex;
+        align-items: center;
+        
+        svg {
+            fill: @grey-c6;
+        }
+    }
+    
+    &__phone-link {
         font-family: "Open Sans", Arial, sans-serif;
         font-size: @font-size-base - .2;
         line-height: @line-height-base - .3;
@@ -154,40 +128,26 @@
         color: @grey-c6;
         font-weight: normal;
         margin: 0;
-        
-        &:before {
-            width: 8px;
-            height: 12px;
-            top: 3px;
-            left: 2px;
-            content: "";
-            position: absolute;
-            background: url("../img/icons/icons-svg/icon-contact--phone.svg") no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+        margin-left: 10px;
     }
     
     &__email {
-        position: relative;
-        padding-left: 22px;
+        display: flex;
+        align-items: center;
+        
+        svg {
+            fill: @grey-c6;
+        }
+    }
+    
+    &__email-link {
         font-family: "Open Sans", Arial, sans-serif;
         font-size: @font-size-base - .2;
         line-height: @line-height-base - .3;
         font-weight: 100;
         color: @grey-c6;
         margin: 0;
-        
-        &:before {
-            width: 12px;
-            height: 12px;
-            top: 3px;
-            left: 0;
-            content: "";
-            position: absolute;
-            background: url("../img/icons/icons-svg/icon-contact--mail.svg") no-repeat;
-            background-size: cover;
-        }
+        margin-left: 10px;
     }
 }
 
@@ -204,6 +164,7 @@
         margin: 0;
         margin-bottom: 27px;
     }
+    
     
     form {
         position: relative;
@@ -309,7 +270,7 @@
             width: 212px;
             height: 36px;
             background-color: @red;
-            background-image: url("../img/icons/icons-svg/icon-write-us__btn.svg");
+            background-image: url("../img/icon-write-us__btn.svg");
             background-repeat: no-repeat;
             background-position: 180px 11px;
             background-size: 8px 14px;

@@ -33,8 +33,9 @@
         padding: 0;
     }
     &__item {
+        margin: 0 5px 0 5px;
         display: flex;
-        width: 370px;
+        width: 365px;
         border: 2px solid @red-dark;
         background-color: @red-dark;
         &:hover {
@@ -45,9 +46,11 @@
             }
         }
     }
+    
     &__item-descr {
+        align-items: center;
         position: relative;
-        padding: 75px 0 27px 30px;
+        padding: 27px 0 27px 30px;
         width: 107px;
         &:after {
             position: absolute;
@@ -58,8 +61,14 @@
             border-right: 1px solid @red;
         }
     }
+    
+    svg {
+        fill: @white;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
     &__item-name {
-        position: relative;
         margin: 0;
         margin-bottom: 19px;
         font-family: Oswald, Arial, sans-serif;
@@ -69,30 +78,8 @@
         color: @white;
         text-transform: uppercase;
         
-        &:before {
-            content: "";
-            position: absolute;
-            width: 31px;
-            height: 31px;
-            top: -50px;
-            left: 20px;
-            background-image: url("../img/icons/icons-svg/icon-pricing--pencil.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        
-        &--advanced {
-            &:before {
-                background-image: url("../img/icons/icons-svg/icon-pricing--plane.svg");
-            }
-        }
-        
-        &--business {
-            &:before {
-                background-image: url("../img/icons/icons-svg/icon-pricing--portfolio.svg");
-            }
-        }
     }
+    
     &__item-price {
         position: relative;
         margin: 0;
@@ -114,13 +101,24 @@
         padding: 0;
         padding-top: 35px;
         li {
+            position: relative;
             padding: 0;
             margin: 0;
-            padding-left: 33px;
+            padding-left: 50px;
             color: @white;
             font-family: "Open Sans", Arial, sans-serif;
             font-size: @font-size-base - .2;
             line-height: @line-height-base - .3;
+            
+            &:before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: url("../img/icon-pricing--check.svg") no-repeat;
+                left: 30px;
+                top: 5px;
+}
         }
     }
 }

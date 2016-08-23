@@ -1,5 +1,6 @@
 .page-header {
     min-width: 1200px;
+    background-color: @grey-20;
 }
 
 .top-header {
@@ -8,15 +9,13 @@
     width: 100%;
     z-index: 1;
     background-color: @grey-20;
-   
-  &__wrap {
+    &__wrap {
         .wrapper;
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
     &__logo {
         font-family: Raleway, Arial, sans-serif;
         font-size: @font-size-base + 1;
@@ -26,22 +25,20 @@
 }
 
 .phone-number {
+    display: flex;
     position: absolute;
-    padding-left: 37px;
     top: 67px;
     right: 63px;
     background-color: @red-darken;
     min-width: 137px;
     min-height: 37px;
-    background-image: url("../img/icons/icons-svg/icon-phone-handset.svg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: 12px 11px;
-    
+    svg {
+        padding: 12px 12px 11px 12px;
+        fill: @white;
+    }
     a {
         text-align: center;
         display: block;
-//        height: 100%;
         font-family: Oswald, Arial, sans-serif;
         font-size: @font-size-base;
         color: @white;
@@ -53,48 +50,41 @@
 }
 
 .main-nav {
-    
     &__active-item {
         background: @red;
     }
-    
     &__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-    li {
-        color: @grey-fe;
-        flex-grow: 1;
-        flex-wrap: wrap;
-        font-family: Oswald, Arial, sans-serif;
-        text-transform: uppercase;
-        line-height: @line-height-base;
-        font-size: @font-size-base;
-        padding: 5px 15px;
-        
-        &:hover {
-        background: @red;
-        cursor: pointer;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            color: @grey-fe;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            font-family: Oswald, Arial, sans-serif;
+            text-transform: uppercase;
+            line-height: @line-height-base;
+            font-size: @font-size-base;
+            padding: 5px 15px;
+            &:hover {
+                background: @red;
+                cursor: pointer;
+            }
+        }
     }
-    }
-}
 }
 
 .promo {
-    background: url("../img/bg-header.jpg") center no-repeat;
+    background: url("../img/bg-header.jpg") center repeat-x;
     padding: 216px 0;
-    
     @media (-webkit-min-device-pixel-ratio: 2) {
         background-image: url("../img/bg-header@2x.jpg");
         background-size: cover;
-      }
-    
+    }
     &__wrap {
         .wrapper;
     }
-    
     &__tag {
         font-family: Oswald, Arial, sans-serif;
         font-size: @font-size-base - .2;
@@ -104,7 +94,6 @@
         text-transform: uppercase;
         background-color: @red;
     }
-    
     &__title {
         width: 330px;
         margin: 2px 0 0 0;
@@ -118,7 +107,6 @@
         background-color: @grey-20;
         opacity: .9;
     }
-    
     &__subtitle {
         width: 200px;
         margin: 2px 0 0 0;

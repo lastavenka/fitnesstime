@@ -392,35 +392,6 @@ a:focus {
   white-space: nowrap;
   overflow: hidden;
 }
-.icons-sprite {
-  background-image: url("../img/icons/icons@1x/icons-sprite.png");
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .icons-sprite {
-    background-image: url("../img/icons/icons@2x/icons-sprite@2x.png");
-    background-size: 81px 23px;
-  }
-}
-.sprite-icon-features--aqua {
-  width: 16px;
-  height: 22px;
-  background-position: 0 0;
-}
-.sprite-icon-features--cardio {
-  width: 26px;
-  height: 22px;
-  background-position: -16px 0;
-}
-.sprite-icon-features--group {
-  width: 19px;
-  height: 23px;
-  background-position: -42px 0;
-}
-.sprite-icon-features--tablet {
-  width: 20px;
-  height: 23px;
-  background-position: -61px 0;
-}
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -494,7 +465,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .features {
   min-width: 1200px;
   padding: 60px 0 70px 0;
-  background-color: #e25050;
+  background-color: #ffffff;
 }
 .features__wrap {
   padding: 0 5%;
@@ -667,6 +638,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding: 0;
 }
 .gallery__item {
+  margin: 0 5px 0 5px;
   position: relative;
   width: 270px;
   height: 180px;
@@ -680,7 +652,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   width: 100%;
   height: 100%;
   background-color: #e25050;
-  background-image: url("../img/icons/icons-svg/icon-gallery-glass.svg");
+  background-image: url("../img/icon-gallery-glass.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50px 50px;
@@ -726,25 +698,16 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   font-size: 1.3rem;
   line-height: 2.2rem;
   font-weight: 100;
-  margin-left: 40px;
 }
-.twitter__text:before {
-  position: absolute;
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icons/icons-svg/icon-social--twitter.svg");
-  background-repeat: no-repeat;
-  left: -35px;
-  background-size: contain;
-  top: 8px;
+.twitter svg {
+  fill: #ffffff;
 }
-.twitter__text span {
+.twitter span {
   display: inline-block;
   margin-left: 5px;
   color: #717171;
 }
-.twitter__icon {
+__icon {
   width: 24px;
   height: 24px;
   margin: 12px 15px 0 0;
@@ -840,9 +803,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   background-size: cover;
   background-position: center;
 }
-.contact__email {
-  position: relative;
-  padding-left: 22px;
+.contact__email-link {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 2.1rem;
@@ -850,15 +811,9 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   color: #c6c6c6;
   margin: 0;
 }
-.contact__email:before {
-  width: 12px;
-  height: 12px;
-  top: 3px;
-  left: 0;
-  content: "";
-  position: absolute;
-  background: url("../img/icons/icons-svg/icon-contact--mail.svg") no-repeat;
-  background-size: cover;
+#icon-contact--mail {
+  fill: #ffffff;
+  padding-top: 10px;
 }
 .write-us {
   width: 670px;
@@ -1018,6 +973,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .page-header {
   min-width: 1200px;
+  background-color: #202020;
 }
 .top-header {
   padding: 33px 0;
@@ -1040,8 +996,8 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   line-height: 2.4rem;
 }
 .phone-number {
+  display: flex;
   position: absolute;
-  padding-left: 37px;
   top: 67px;
   right: 63px;
   background-color: #bd4141;
@@ -1051,6 +1007,10 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position: 12px 11px;
+}
+.phone-number svg {
+  padding: 12px 12px 11px 12px;
+  fill: #ffffff;
 }
 .phone-number a {
   text-align: center;
@@ -1087,7 +1047,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   cursor: pointer;
 }
 .promo {
-  background: url("../img/bg-header.jpg") center no-repeat;
+  background: url("../img/bg-header.jpg") center repeat-x;
   padding: 216px 0;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -1205,6 +1165,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding: 0;
 }
 .pricing__item {
+  margin: 0 5px 0 5px;
   display: flex;
   width: 370px;
   border: 2px solid #d14343;
@@ -1218,8 +1179,9 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   border-color: #ffffff;
 }
 .pricing__item-descr {
+  align-items: center;
   position: relative;
-  padding: 75px 0 27px 30px;
+  padding: 27px 0 27px 30px;
   width: 107px;
 }
 .pricing__item-descr:after {
@@ -1230,8 +1192,12 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   height: 120px;
   border-right: 1px solid #e25050;
 }
+.pricing svg {
+  fill: #ffffff;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 .pricing__item-name {
-  position: relative;
   margin: 0;
   margin-bottom: 19px;
   font-family: Oswald, Arial, sans-serif;
@@ -1240,23 +1206,6 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
-}
-.pricing__item-name:before {
-  content: "";
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  top: -50px;
-  left: 20px;
-  background-image: url("../img/icons/icons-svg/icon-pricing--pencil.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.pricing__item-name--advanced:before {
-  background-image: url("../img/icons/icons-svg/icon-pricing--plane.svg");
-}
-.pricing__item-name--business:before {
-  background-image: url("../img/icons/icons-svg/icon-pricing--portfolio.svg");
 }
 .pricing__item-price {
   position: relative;
@@ -1331,6 +1280,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .team__item {
   width: 270px;
+  margin: 0 5px 0 5px;
   background-color: #ffffff;
   padding-bottom: 16px;
 }

@@ -33,11 +33,14 @@
         padding: 0;
     }
     &__item {
-        margin: 0 5px 0 5px;
+        margin-left: 5px;
         display: flex;
         width: 365px;
         border: 2px solid @red-dark;
         background-color: @red-dark;
+        &:first-child {
+            margin-left: 0;
+        }
         &:hover {
             border-color: @white;
             cursor: pointer;
@@ -50,7 +53,7 @@
     &__item-descr {
         align-items: center;
         position: relative;
-        padding: 27px 0 27px 30px;
+        padding: 27px 0 27px 20px;
         width: 107px;
         &:after {
             position: absolute;

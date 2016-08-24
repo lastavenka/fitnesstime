@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         csscomb: {
             style: {
                 expand: true,
-                src: ["less/**/*.less"]
+                src: ["source/less/**/*.less"]
             }
         },
 
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
             },
             default: {
                 files: {
-                    "source/img/sprite.svg": ["source/img/icons/*.svg"],
+                    "build/img/sprite.svg": ["source/img/icons/*.svg"],
                 },
             },
         },
@@ -127,8 +127,8 @@ module.exports = function (grunt) {
             all: {
                 src: "source/img/icons/*.png",
                 retinaSrcFilter: "source/img/icons/*@2x.png",
-                dest: "source/img/sprite.png",
-                retinaDest: "source/img/sprite@2x.png",
+                dest: "build/img/sprite.png",
+                retinaDest: "build/img/sprite@2x.png",
                 destCss: "source/less/sprite.less"
             }
         },
@@ -192,19 +192,19 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
     grunt.registerTask("build", [
+        "clean",
+        "copy",
         "svgmin",
         "svgstore",
         "sprite",
-        "clean",
-        "copy",
         "less",
-        "uglify",
         "autoprefixer",
         "cmq",
-        "csscomb",
         "cssmin",
-        "imagemin"
+        "imagemin",
+        "uglify",
     ]);
     grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-csscomb");
 
 };

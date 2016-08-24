@@ -1,335 +1,327 @@
 .page-footer {
-    min-width: 1200px;
-    
-    padding: 35px 0;
-    background: url("../img/bg-footer.jpg") center no-repeat;
-    
-    @media (-webkit-min-device-pixel-ratio: 2) {
-        background-image: url("../img/bg-footer@2x.jpg");
-        background-size: cover;
-      }
-    
-    &__wrap {
-        .wrapper;
-    }
-    
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid @grey-70;
-        padding-bottom: 25px;
-    }
+  min-width: 1200px;
+  padding: 35px 0;
+  background: url("../img/bg-footer.jpg") center no-repeat;
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url("../img/bg-footer@2x.jpg");
+    background-size: cover;
+  }
+
+  &__wrap {
+    .wrapper;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid @grey-70;
+    padding-bottom: 25px;
+  }
 }
 
 .twitter {
-    
-    a {
-        display: flex;
-        align-items: center;
-    }
-    
-    &__text {
-        width: 580px;
-        position: relative;
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    width: 580px;
+    position: relative;
     color: @white;
     margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: @font-size-base - .1;
     line-height: @line-height-base - .2;
     font-weight: 100;
-    }
-        
-        svg {
-            fill: @white;
-            margin-right: 15px;
-}
-    
-    span {
-        display: inline-block;
-        margin-left: 5px;
-        color: @grey-71;
-    }
+  }
+
+  svg {
+    fill: @white;
+    margin-right: 15px;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: 5px;
+    color: @grey-71;
+  }
 }
 
 
 
 .social {
-    .list-to-flex;
-    align-items: center;
-    
-    li {
-        width: 15px;
-        height: 15px;
-        padding: 6px;
-        border: 1px solid @grey-20;
-        
-        &:hover {
-            border: 1px solid @white;
-        }
+  .list-to-flex;
+  align-items: center;
+
+  li {
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+    border: 1px solid @grey-20;
+
+    &:hover {
+      border: 1px solid @white;
     }
-    
-    a {
-        display:block;
-        line-height: 15px;
-        width: 15px;
-        height: 100%;
-    }
-    
-    svg {
-        fill: @white;
-    }
-    
-   
+  }
+
+  a {
+    display: block;
+    line-height: 15px;
+    width: 15px;
+    height: 100%;
+  }
+
+  svg {
+    fill: @white;
+  }
 }
 
 .page-footer__middle {
-        display: flex;
-        justify-content: space-between;
-        padding: 60px 0 100px 0;
-    }
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 100px 0;
+}
 
 .contact {
-    width: 370px;
-    
-    &__title {
-        font-family: Oswald, Arial, sans-serif;
-        font-size: @font-size-base;
-        line-height: @line-height-base - .3;
-        font-weight: bold;
-        color: @white;
-        text-transform: uppercase;
-        margin: 0;
-        margin-bottom: 23px;
+  width: 370px;
+
+  &__title {
+    font-family: Oswald, Arial, sans-serif;
+    font-size: @font-size-base;
+    line-height: @line-height-base - .3;
+    font-weight: bold;
+    color: @white;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: @font-size-base - .2;
+    line-height: @line-height-base - .3;
+    font-weight: 100;
+    color: @grey-c6;
+    margin-bottom: 22px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: @grey-c6;
     }
-    
-    &__text {
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: @font-size-base - .2;
-        line-height: @line-height-base - .3;
-        font-weight: 100;
-        color: @grey-c6;
-        margin-bottom: 22px;
+  }
+
+  &__phone-link {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: @font-size-base - .2;
+    line-height: @line-height-base - .3;
+    font-weight: 100;
+    color: @grey-c6;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  &__email {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: @grey-c6;
     }
-    
-    &__phone {
-        display: flex;
-        align-items: center;
-        
-        svg {
-            fill: @grey-c6;
-        }
-    }
-    
-    &__phone-link {
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: @font-size-base - .2;
-        line-height: @line-height-base - .3;
-        font-weight: 100;
-        color: @grey-c6;
-        font-weight: normal;
-        margin: 0;
-        margin-left: 10px;
-    }
-    
-    &__email {
-        display: flex;
-        align-items: center;
-        
-        svg {
-            fill: @grey-c6;
-        }
-    }
-    
-    &__email-link {
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: @font-size-base - .2;
-        line-height: @line-height-base - .3;
-        font-weight: 100;
-        color: @grey-c6;
-        margin: 0;
-        margin-left: 10px;
-    }
+  }
+
+  &__email-link {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: @font-size-base - .2;
+    line-height: @line-height-base - .3;
+    font-weight: 100;
+    color: @grey-c6;
+    margin: 0;
+    margin-left: 10px;
+  }
 }
 
 .write-us {
-    width: 670px;
-    
-    &__title {
+  width: 670px;
+
+  &__title {
+    font-family: Oswald, Arial, sans-serif;
+    font-size: @font-size-base;
+    line-height: @line-height-base - .3;
+    font-weight: bold;
+    color: @white;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 27px;
+  }
+
+
+  form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+      width: 190px;
+      border: 1px solid @grey-4f;
+      margin-bottom: 16px;
+      padding: 10px;
+      background: none;
+
+      &:focus {
+        outline: none;
+        color: @grey-c6;
+      }
+
+      &::-webkit-input-placeholder {
         font-family: Oswald, Arial, sans-serif;
         font-size: @font-size-base;
         line-height: @line-height-base - .3;
-        font-weight: bold;
-        color: @white;
+        color: @grey-4f;
         text-transform: uppercase;
-        margin: 0;
-        margin-bottom: 27px;
+        vertical-align: middle;
+      }
+
+      &::-moz-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+
+      &:-moz-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+      }
+
+      &:-ms-input-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+      }
     }
-    
-    
-    form {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-        input {
-            width: 190px;
-            border: 1px solid @grey-4f;
-            margin-bottom: 16px;
-            padding: 10px;
-            background: none;
-            
-            &:focus {
-                outline: none;
-                color: @grey-c6;
-            }
-            
-            &::-webkit-input-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            vertical-align: middle;
-            }
-        
-           &::-moz-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            vertical-align: middle;
-            }
-        
-        &:-moz-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            }
-        
-        &:-ms-input-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            }
-        }
-        
-        textarea {
-            width: 419px;
-            height: 91px;
-            padding: 10px;
-            border: 1px solid @grey-4f;
-            background: none;
-            
-            &:focus {
-                outline: none;
-                color: @grey-c6;
-            }
-            
-            &::-webkit-input-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            vertical-align: middle;
-            }
-            
-            &::-moz-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            vertical-align: middle;
-            }
-        
-        &:-moz-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            }
-        
-        &:-ms-input-placeholder {
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - .3;
-            color: @grey-4f;
-            text-transform: uppercase;
-            }
-        }
-        
-        .write-us__btn {
-            width: 212px;
-            height: 36px;
-            background-color: @red;
-            background-image: url("../img/icon-write-us__btn.svg");
-            background-repeat: no-repeat;
-            background-position: 180px 11px;
-            background-size: 8px 14px;
-            border: none;
-            font-family: Oswald, Arial, sans-serif;
-            font-size: @font-size-base;
-            line-height: @line-height-base - 1;
-            color: @white;
-            text-transform: uppercase;
-            text-align: left;
-            padding-left: 20px;
-            margin-left: 17px;
-            
-            &:active {
-                background-color: @red-dark;
-                outline: none;
-                color: @white;
-            }
-            
-            &:focus {
-                color: @white;
-}
-        }
-        
-        span {
-            position: absolute;
-            right: 6%;
-            bottom: 28%;
-            font-family: "Open Sans", Arial, sans-serif;
-            font-size: @font-size-base - .2;
-            line-height: @line-height-base - .3;
-            font-weight: 100;
-            color: @grey-70;
-        }
+
+    textarea {
+      width: 419px;
+      height: 91px;
+      padding: 10px;
+      border: 1px solid @grey-4f;
+      background: none;
+
+      &:focus {
+        outline: none;
+        color: @grey-c6;
+      }
+
+      &::-webkit-input-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+
+      &::-moz-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+
+      &:-moz-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+      }
+
+      &:-ms-input-placeholder {
+        font-family: Oswald, Arial, sans-serif;
+        font-size: @font-size-base;
+        line-height: @line-height-base - .3;
+        color: @grey-4f;
+        text-transform: uppercase;
+      }
     }
-    
+
+    .write-us__btn {
+      width: 212px;
+      height: 36px;
+      background-color: @red;
+      background-image: url("../img/icon-write-us__btn.svg");
+      background-repeat: no-repeat;
+      background-position: 180px 11px;
+      background-size: 8px 14px;
+      border: none;
+      font-family: Oswald, Arial, sans-serif;
+      font-size: @font-size-base;
+      line-height: @line-height-base - 1;
+      color: @white;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 20px;
+      margin-left: 17px;
+
+      &:active {
+        background-color: @red-dark;
+        outline: none;
+        color: @white;
+      }
+
+      &:focus {
+        color: @white;
+      }
+    }
+
+    span {
+      position: absolute;
+      right: 6%;
+      bottom: 28%;
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: @font-size-base - .2;
+      line-height: @line-height-base - .3;
+      font-weight: 100;
+      color: @grey-70;
+    }
+  }
 }
 
 .page-footer__bottom {
-        display: flex;
-        justify-content: space-between;
-    
-    a {
-        color: @red;
-        text-decoration: underline;
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: @font-size-base - .2;
-        line-height: @line-height-base - .3;
-        font-weight: 100;
-    }
-    }
+  display: flex;
+  justify-content: space-between;
 
-.copyright {
+  a {
+    color: @red;
+    text-decoration: underline;
     font-family: "Open Sans", Arial, sans-serif;
-        font-size: @font-size-base - .2;
-        line-height: @line-height-base - .3;
-        font-weight: 100;
-        color: @grey-70;
+    font-size: @font-size-base - .2;
+    line-height: @line-height-base - .3;
+    font-weight: 100;
+  }
 }
 
-
-
+.copyright {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: @font-size-base - .2;
+  line-height: @line-height-base - .3;
+  font-weight: 100;
+  color: @grey-70;
+}

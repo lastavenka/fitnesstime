@@ -1,42 +1,39 @@
 .partners {
-    min-width: 1200px;
-    padding: 60px 0 70px 0;
-    background: @white;
-    
-    &__wrap {
-        .wrapper;
+  min-width: 1200px;
+  padding: 60px 0 70px 0;
+  background: @white;
+
+  &__wrap {
+    .wrapper;
+  }
+
+  &__title {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 70px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: @font-size-base + 1;
+    line-height: @line-height-base - .3;
+    font-weight: bold;
+    color: @grey-20;
+    text-transform: uppercase;
+
+    &:after {
+      position: absolute;
+      bottom: -10px;
+      left: 48%;
+      width: 45px;
+      border-bottom: 1px solid @grey-20;
+      content: "";
     }
-    
-     &__title {
-        position: relative;
-        text-align: center;
-        margin: 0;
-         margin-bottom: 70px;
-        font-family: Oswald, Arial, sans-serif;
-        font-size: @font-size-base + 1;
-        line-height: @line-height-base - .3;
-        font-weight: bold;
-        color: @grey-20;
-        text-transform: uppercase;
-         
-         &:after {
-             position: absolute;
-             bottom: -10px;
-             left: 48%;
-             width: 45px;
-             border-bottom: 1px solid @grey-20;
-             content: "";
-         }
-    }
-    
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    &__item {
-    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,4 +1,6 @@
 .page-footer {
+    
+  min-width: 1200px;
   padding: 35px 0;
   background: url("../img/bg-footer.jpg") center no-repeat;
   background-size: cover;
@@ -156,7 +158,6 @@
 
 
   form {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -271,7 +272,6 @@
       text-transform: uppercase;
       text-align: left;
       padding-left: 20px;
-      margin-left: 17px;
 
       &:active {
         background-color: @red-dark;
@@ -285,7 +285,6 @@
     }
 
     span {
-      position: absolute;
       right: 6%;
       bottom: 28%;
       font-family: "Open Sans", Arial, sans-serif;
@@ -295,6 +294,13 @@
       color: @grey-70;
     }
   }
+    
+    &__input-group {
+      margin-left: 17px;
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 .page-footer__bottom {

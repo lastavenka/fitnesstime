@@ -1,11 +1,10 @@
 .page-footer {
-  min-width: 1200px;
   padding: 35px 0;
   background: url("../img/bg-footer.jpg") center no-repeat;
+  background-size: cover;
 
   @media (-webkit-min-device-pixel-ratio: 2) {
     background-image: url("../img/bg-footer@2x.jpg");
-    background-size: cover;
   }
 
   &__wrap {
@@ -55,22 +54,16 @@
   .list-to-flex;
   align-items: center;
 
-  li {
+  a {
+    border: 1px solid @grey-20;
     width: 15px;
     height: 15px;
     padding: 6px;
-    border: 1px solid @grey-20;
-
+    display: block;
+    font-size: 0;
     &:hover {
       border: 1px solid @white;
     }
-  }
-
-  a {
-    display: block;
-    line-height: 15px;
-    width: 15px;
-    height: 100%;
   }
 
   svg {

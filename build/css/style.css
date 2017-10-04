@@ -1051,12 +1051,12 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   background-color: #e25050;
 }
 .promo__title {
-  width: 330px;
+  width: 350px;
   margin: 2px 0 0 0;
   padding: 26px 23px 19px 23px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 3rem;
-  line-height: 2.4rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #fefefe;
   text-transform: uppercase;
